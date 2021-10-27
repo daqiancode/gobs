@@ -24,9 +24,7 @@ func TestGet(t *testing.T) {
 func TestRead(t *testing.T) {
 	cli, err := gobs.NewOBS(accessKey, secretKey, endPoint, bucket)
 	assert.Nil(t, err)
-	for i := 0; i < 10; i++ {
-		r, err := cli.Read("test/drum/master.m3u8")
-		assert.Nil(t, err)
-		fmt.Println(r.String())
-	}
+	r, err := cli.Read("image/a.jpg")
+	assert.Nil(t, err)
+	fmt.Println(r.String())
 }

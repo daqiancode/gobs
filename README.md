@@ -1,5 +1,4 @@
 # gobs
-----------
 Go obs client for huawei cloud OBS
 
 ### Example
